@@ -3,13 +3,12 @@
 
 using namespace std;
 
-class Pet {
-    private: 
-    
-    string name;
-    int age;
-    int hunger; ///0-10 scale 
-    
+Pet::Pet (){ ///default constructor
+    name = "Unknown";
+    age = 0;
+    hunger = 5;
+        
+    }
     public:
     
     void Pet::setName (string n){
@@ -29,9 +28,6 @@ class Pet {
         return hunger;
     }
    
-    
-    Pet();
-    
     void Pet::feedPet(){
         if (hunger > 0){
             hunger--;
