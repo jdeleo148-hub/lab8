@@ -14,52 +14,6 @@
 
 using namespace std;
 
-
-class Pet {
-    private: 
-    
-    string name;
-    int age;
-    int hunger; ///0-10 scale 
-    
-    public:
-    
-    void setName (string n){
-        name = n;
-    }
-    void setAge (int a) {
-        age = a;
-    }
-    
-    string getName() const {
-        return name;
-    }
-    int getAge() const {
-        return age;
-    }
-    int getHunger() const {
-        return hunger;
-    }
-    
-    Pet (){ ///default constructor
-    name = "Unknown";
-    age = 0;
-    hunger = 5;
-        
-    }
-    void birthday(){
-        age = age + 1;
-    }
-    
-    void feedPet(){
-        if (hunger > 0){
-            hunger--;
-        }
-    }
-    
-    
-};
-
 int main()
 {
     char choice;
